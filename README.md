@@ -1,4 +1,20 @@
 # 3DOF-manipulator-control
+
+
+
+
+https://user-images.githubusercontent.com/91877982/217915156-cac6acad-f66c-40ae-a3db-041c95ef3dc1.mp4
+
+
+
+
+
+https://user-images.githubusercontent.com/91877982/217915211-b0f023fb-47d0-4c53-ba39-dfa67ef691a5.mp4
+
+
+
+
+
 Dynamic modeling and position control of 3DOF manipulator, using simulink.
 
 The objective of this part of the project is to gain a hands-on understanding of the control and dynamics of robot’s manipulator with 3 degrees of freedom. In this part, I will present a simulation of the arm, with and without control.
