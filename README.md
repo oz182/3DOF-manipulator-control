@@ -28,11 +28,12 @@ The selected robot arm configuration is a 2 dimensional, “RRR” type of arm, 
 We can derive the robot’s dynamic equations of motion using the Lagrange equation of the form (assuming no external forces applied and no friction):
 
 ![image](https://user-images.githubusercontent.com/91877982/217913413-742c67cc-e7ba-4a27-b415-df655ce5615f.png)
+
 Using the numeric solution of this equation, we get the vector τ ̅, which is the torque that needs to be applied on motor of each joint.
 
 Every part of the equation will be constructed using the following methods:
 
-	Inertia matrix – To calculate this matrix, we need to find the velocities Jacobians (forward and angular) of each joint. We do that by derive each joint’s center of mass expression (P_c) with every joint’s angle.
+Inertia matrix – To calculate this matrix, we need to find the velocities Jacobians (forward and angular) of each joint. We do that by derive each joint’s center of mass expression (P_c) with every joint’s angle.
 
 ![image](https://user-images.githubusercontent.com/91877982/217913557-72c4dd66-e67a-431a-b613-b3ad714dbc60.png)
 
@@ -43,7 +44,7 @@ After we calculate the Jacobians for each joint, we can calculate the matrix usi
 ![image](https://user-images.githubusercontent.com/91877982/217913621-bd577ed0-70da-498e-a3eb-22fe20ab0bde.png)
 
 
-	Centrifugal and Coriolis matrix – I’ve applied these two matrices, using the following method: First, for 3DOF RRR robotic arm, Matrix C (Centrifugal) and matrix B (Coriolis) are expressed in the following way:
+Centrifugal and Coriolis matrix – I’ve applied these two matrices, using the following method: First, for 3DOF RRR robotic arm, Matrix C (Centrifugal) and matrix B (Coriolis) are expressed in the following way:
 
 ![image](https://user-images.githubusercontent.com/91877982/217913689-191fd37a-95a4-4080-86d0-7eb29d5aff7f.png)
 
@@ -57,7 +58,7 @@ When:
 
 This method is technically applied by 3 nested “for” loops (thus constructing the b matrix).
 
-	Gravity matrix – The gravity matrix shows the forces experienced by the robot in the negative y – direction (acceleration due to gravity).
+Gravity matrix – The gravity matrix shows the forces experienced by the robot in the negative y – direction (acceleration due to gravity).
 
 ![image](https://user-images.githubusercontent.com/91877982/217913813-8614ac06-7ee8-4140-afdd-ef979d369efe.png)
 
