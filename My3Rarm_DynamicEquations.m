@@ -94,12 +94,12 @@ fprintf('DONE');
 
 fprintf('\nConstructing Gravity Matrix... ');
 
-L1 = 4;
-L2 = 3;
-L3 = 2;
-m1 = 20;
-m2 = 15;
-m3 = 10;
+L1 = 4; % [cm]
+L2 = 3; % [cm]
+L3 = 2; % [cm]
+m1 = 20; % [gram]
+m2 = 15; % [gram]
+m3 = 10; % [gram]
 I1_zz = 0.5;
 I2_zz = 0.2;
 I3_zz = 0.1;

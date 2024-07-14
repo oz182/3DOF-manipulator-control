@@ -4,14 +4,14 @@
 % Each link is only allowed to have 1 degree of freedom.
 
 
-function [output] = AnimationSimm(input)
+function [output] = AnimationSim(input)
 
     th1 = input(1);
     th2 = input(2);
     th3 = input(3);
 
-    L1 = 2;
-    L2 = 2;
+    L1 = 4;
+    L2 = 3;
     L3 = 2;
     P = L1+L2+L3; % work envelope/ perimeter
 %     th1 = theta1*pi/180;
